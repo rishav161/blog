@@ -11,7 +11,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       const response = await axios.post("http://localhost:5000/api/login", { username, password });
-      localStorage.setItem("token", response.data.token); // Save token in localStorage
+      localStorage.setItem("token", response.data.token); 
       navigate("/"); // Redirect to homepage
     } catch (error) {
       console.error("Error logging in", error);

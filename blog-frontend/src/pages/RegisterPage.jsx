@@ -12,7 +12,7 @@ const RegisterPage = () => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:5000/api/register", { username, password });
-      navigate("/login"); // Redirect to login after successful registration
+      navigate("/login"); 
     } catch (error) {
       console.error("Error registering", error);
       alert("User already exists or invalid data");

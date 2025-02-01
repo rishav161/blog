@@ -13,52 +13,31 @@ Project Setup
 Backend Setup
 Clone the repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/blog-app.git
 cd blog-backend
 Install dependencies:
-
-bash
-Copy
-Edit
 npm install
 Create a .env file in the blog-backend directory with the following environment variables:
-
-plaintext
-Copy
-Edit
 JWT_SECRET=your-secret-key
 MONGODB_URI=your-mongodb-connection-string
 Run the backend server:
 
-bash
-Copy
-Edit
+
 npm run dev
 The backend should now be running at http://localhost:5000.
 
 Frontend Setup
 Go to the blog-frontend directory:
 
-bash
-Copy
-Edit
 cd blog-frontend
 Install dependencies:
 
-bash
-Copy
-Edit
+
 npm install
 Run the frontend:
-
-bash
-Copy
-Edit
 npm run dev
-The frontend should now be running at http://localhost:3000.
+The frontend should now be running at http://localhost:5000.
 
 Running the Application Locally
 Prerequisites

@@ -1,4 +1,3 @@
-// src/pages/PostDetails.js
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getPostById } from "../api/api";

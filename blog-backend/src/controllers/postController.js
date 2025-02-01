@@ -1,9 +1,6 @@
-// src/controllers/postController.js
 import Post from "../models/Post.js";
 
-// @desc    Get all posts
-// @route   GET /posts
-// @access  Public
+
 export const getPosts = async (req, res) => {
   try {
     const posts = await Post.find().sort({ createdAt: -1 });
@@ -13,9 +10,6 @@ export const getPosts = async (req, res) => {
   }
 };
 
-// @desc    Get a single post
-// @route   GET /posts/:id
-// @access  Public
 export const getPostById = async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
@@ -27,9 +21,7 @@ export const getPostById = async (req, res) => {
   }
 };
 
-// @desc    Create a new post
-// @route   POST /posts
-// @access  Public
+
 export const createPost = async (req, res) => {
   const { title, content } = req.body;
 
@@ -47,9 +39,6 @@ export const createPost = async (req, res) => {
   }
 };
 
-// @desc    Update a post
-// @route   PUT /posts/:id
-// @access  Public
 export const updatePost = async (req, res) => {
   const { title, content } = req.body;
 
@@ -68,9 +57,7 @@ export const updatePost = async (req, res) => {
   }
 };
 
-// @desc    Delete a post
-// @route   DELETE /posts/:id
-// @access  Public
+
 export const deletePost = async (req, res) => {
   try {
     const deletedPost = await Post.findByIdAndDelete(req.params.id);

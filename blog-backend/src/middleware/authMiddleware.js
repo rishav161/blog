@@ -1,4 +1,3 @@
-// src/middleware/authMiddleware.js
 
 const authenticateToken = (req, res, next) => {
     const token = req.header("Authorization")?.split(" ")[1];
@@ -13,5 +12,5 @@ const authenticateToken = (req, res, next) => {
     }
   };
   
-  export default authenticateToken;  // <-- Ensure you're using default export
+  export default authenticateToken;  
   

@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import { useEffect, useState } from "react";
 import { getPosts, deletePost } from "../api/api";
 import { Link } from "react-router-dom";

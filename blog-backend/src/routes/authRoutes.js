@@ -1,4 +1,3 @@
-// src/routes/authRoutes.js
 import express from "express";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
@@ -36,7 +35,6 @@ router.post("/login", async (req, res) => {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
-    // Use JWT_SECRET from .env file
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1h", // Token expires in 1 hour
     });
