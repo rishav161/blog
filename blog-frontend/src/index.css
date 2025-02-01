@@ -1,0 +1,8 @@
+/* src/index.css */
+body {
+  background-color: #f4f4f9; /* Light grey background for the whole page */
+  min-height: 100vh; /* Ensure the page takes full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
