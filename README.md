@@ -1,4 +1,4 @@
-Blog Application
+**Blog Application**
 A full-stack blog application built with React for the frontend, Node.js and Express for the backend, and MongoDB for the database. This app allows users to create, read, edit, and delete blog posts. It also supports JWT authentication for secure access to protected routes.
 
 Table of Contents
@@ -11,8 +11,8 @@ Technologies Used
 License
 Project Setup
 Backend Setup
-Clone the repository:
 
+**Clone the repository:**
 
 git clone https://github.com/your-username/blog-app.git
 cd blog-backend
@@ -27,13 +27,11 @@ Run the backend server:
 npm run dev
 The backend should now be running at http://localhost:5000.
 
-Frontend Setup
+**Frontend Setup**
 Go to the blog-frontend directory:
 
 cd blog-frontend
 Install dependencies:
-
-
 npm install
 Run the frontend:
 npm run dev
@@ -42,12 +40,12 @@ The frontend should now be running at http://localhost:5000.
 Running the Application Locally
 Prerequisites
 Ensure you have Node.js (v12 or higher) and MongoDB installed locally. You can install them from:
-
 Node.js
 MongoDB
-Steps to Run Locally
-Set up the backend:
 
+**Steps to Run Locally**
+
+Set up the backend:
 Follow the steps under Backend Setup.
 Ensure that your MongoDB connection string is correctly set in the .env file.
 Set up the frontend:
@@ -61,20 +59,23 @@ Test creating, editing, and deleting posts, ensuring that JWT authentication is 
 Environment Variables
 Make sure the following environment variables are set in the .env file for both the backend and frontend:
 
-Backend (.env)
+<!-- Backend (.env)
 JWT_SECRET: A secret key used to sign JWT tokens.
 MONGODB_URI: The connection string for MongoDB.
-Frontend (.env)
-REACT_APP_API_URL: The URL of the backend API (e.g., http://localhost:5000 or your deployed backend URL).
-Technologies Used
 
+Frontend (.env)
+REACT_APP_API_URL: The URL of the backend API (e.g., http://localhost:5000 or your deployed backend URL). -->
+
+
+Technologies Used
 Frontend:
 React
 React Router
 Bootstrap for styling
 Axios for API calls
-Backend:
 
+
+Backend:
 Node.js
 Express.js
 MongoDB with Mongoose
